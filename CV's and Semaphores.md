@@ -137,7 +137,6 @@ void *consumer(void *arg) {
         printf("%d\n", tmp);
     }
 }
-
 ```
 
 1. We are using `if` here instead of `while`, which is a bad design choice, as if it gets context switched right after passing the check, and if the state is undesirable, we need to check again, before proceeding. While ensures that the condition gets checked again, as it only breaks if it checks again and fails the check. Right now, it moves ahead as soon as wait() lets it go, but the while makes it check again.
@@ -183,6 +182,25 @@ In signal, only 1 thread gets activated, but in broadcast, all of them get activ
 We wait for N requests to arrive at a time, and then process them all, before waiting for the next batch of N. We only process once we get a batch of N requests.
 
 We can use 2 cv's: 1 for the batch processing to wait, and the other for the requests to wait.
+
+```c
+// request thread
+lock(mutex)
+count++
+if (count == N) 
+	signal(cv_batch_processor)
+while (!batch_started)
+	wait(cv_request, mutex)
+unlock(mutex)
+
+// batch processor thread
+lock(mutex)
+while (count < N)
+	wait(cv_batch_processor, mutex)
+batch_started = true
+signal_broadcast(cv_request)
+unlock(mutex)
+```
 
 
 # Semaphores

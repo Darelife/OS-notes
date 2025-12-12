@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "84e87aefef1c9eb0",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "IPC.md",
+                "file": "CV's and Semaphores.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for IPC"
+              "title": "Backlinks for CV's and Semaphores"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "IPC.md",
+                "file": "CV's and Semaphores.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from IPC"
+              "title": "Outgoing links from CV's and Semaphores"
             }
           },
           {
@@ -156,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "IPC.md",
+                "file": "CV's and Semaphores.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of IPC"
+              "title": "Outline of CV's and Semaphores"
             }
           }
         ]
@@ -186,13 +187,13 @@
   "active": "c453eee2316e8aef",
   "lastOpenFiles": [
     "CV's and Semaphores.md",
+    "IPC.md",
     "Virtual Memory and Paging.md",
     "Threads.md",
     "Scheduling.md",
     "Processes.md",
     "os doc.md",
     "Locks.md",
-    "IPC.md",
     "Introduction.md",
     "File System.md",
     "Cheat Sheet.md",
