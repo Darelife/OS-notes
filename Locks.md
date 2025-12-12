@@ -72,7 +72,7 @@ void unlock(lock_t *lock) lock->flag = 0;
 ```
 ### Compare And Swap (CAS)
 
-It has 3 arguments, address of the variable, the expected old value, and the new value. If the old value is the expected one, it will write the new one, and will return true, else it won't write and will return false.
+It has 3 arguments, address of the variable, the expected old value, and the new value. If the old value is the expected one, it will write the new one, and will return the old value.
 
 ```c
 void lock(lock_t *lock) {
