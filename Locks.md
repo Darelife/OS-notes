@@ -76,7 +76,7 @@ It has 3 arguments, address of the variable, the expected old value, and the new
 
 ```c
 void lock(lock_t *lock) {
-	while (!CompareAndSwap(&lock->flag, 0, 1));
+	while (CompareAndSwap(&lock->flag, 0, 1)==1);
 }
 ```
 
