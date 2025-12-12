@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ca4e6ddd53d2c5a6",
+        "id": "12659cc5486f8b1a",
         "type": "tabs",
         "children": [
           {
-            "id": "a7bbc94bfc1df891",
+            "id": "c453eee2316e8aef",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "IPC.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "IPC"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "IPC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for IPC"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "IPC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from IPC"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "IPC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of IPC"
             }
           }
         ]
@@ -176,8 +183,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "9440e20a2cdbeeef",
+  "active": "c453eee2316e8aef",
   "lastOpenFiles": [
+    "CV's and Semaphores.md",
     "Virtual Memory and Paging.md",
     "Threads.md",
     "Scheduling.md",
@@ -187,7 +195,6 @@
     "IPC.md",
     "Introduction.md",
     "File System.md",
-    "CV's and Semaphores.md",
     "Cheat Sheet.md",
     "Operating System/os doc.md",
     "Operating System/Virtual Memory and Paging.md",

@@ -6,6 +6,7 @@
 4. Shared Memory: threads, and libs
 5. Signal: basically an intr
 
+# Just this topic is left for now....gonna quickly do it
 ## Message Queues
 
 
